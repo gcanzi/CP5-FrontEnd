@@ -43,3 +43,18 @@ CP5-FrontEnd/
 5. **Depoimentos** — 3 avaliações de usuários fictícios com avatares
 6. **Contato** — Formulário de captura de e-mail para marketing
 7. **Footer** — Redes sociais, contato e copyright
+
+---
+
+## Autor
+| Nome                           | RM       |
+| ------------------------------ | -------- |
+| **Gustavo Moretim Canzi**      | RM567683 |
+
+---
+
+## Acesse o Projeto Online  
+
+O site está disponível através do Github Pages:  
+
+🔗 [Acesse aqui](https://gcanzi.github.io/CP5-FrontEnd/)
