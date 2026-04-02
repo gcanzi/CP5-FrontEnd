@@ -1,0 +1,90 @@
+:root {
+  --green: #1DB954;
+  --green-hover: #1ed760;
+  --bg: #121212;
+  --surface: #181818;
+  --surface-2: #282828;
+  --text-muted: #b3b3b3;
+  --text-faint: #535353;
+  --card-border: rgba(255,255,255,0.06);
+}
+
+html { scroll-behavior: smooth; }
+
+.spotify-green-text {
+  background: linear-gradient(135deg, var(--green), #17a349);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#navbar.scrolled {
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.logo-icon {
+  box-shadow: 0 0 16px rgba(29, 185, 84, 0.35);
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(29,185,84,0.08) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  pointer-events: none;
+}
+
+.hero-img-wrapper { position: relative; }
+.hero-img-overlay {
+  background: linear-gradient(to top, rgba(18,18,18,0.6) 0%, transparent 60%);
+}
+
+.now-playing-pill {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.bar {
+  display: inline-block;
+  width: 3px;
+  background: var(--green);
+  border-radius: 2px;
+  animation: soundbar 0.8s ease-in-out infinite alternate;
+}
+.bar:nth-child(1) { height: 8px;  animation-delay: 0s; }
+.bar:nth-child(2) { height: 16px; animation-delay: 0.15s; }
+.bar:nth-child(3) { height: 12px; animation-delay: 0.3s; }
+.bar:nth-child(4) { height: 20px; animation-delay: 0.1s; }
+.bar:nth-child(5) { height: 10px; animation-delay: 0.25s; }
+
+@keyframes soundbar {
+  from { transform: scaleY(0.4); }
+  to   { transform: scaleY(1); }
+}
+
+.benefit-card,
+.feature-card,
+.testimonial-card {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.benefit-card:hover,
+.feature-card:hover,
+.testimonial-card:hover {
+  background: var(--surface-2);
+  border-color: rgba(29, 185, 84, 0.3);
+  transform: translateY(-4px);
+}
+
+.player-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+}
